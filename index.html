@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Shreeji's Food Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #DFB16B;">
+    <img height="550px" width="1520px" src="https://img.restaurantguru.com/rbcb-Shreejis-Food-Hub-interior.jpg">
+    <nav class="navbar navbar-inverse" style="position: sticky; top: 0;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Shreeji's Food Hub</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+    </nav>
+    <div id="menu">
+        <div class="grid"><img
+                src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/b8fee70dcd2f7f43efe87cb2bdba64f3">
+        </div>
+        <div class="grid">
+            <br><br><br><br><br><br>
+            <button id="button_show" onclick="show()">SHOW MENU</button>
+            <br><br>
+            <label id="label_menu"></label>
+        </div>
+    </div>
+    <br><br>
+    <div id="contacts">
+        <h1>Connect us with online</h1>
+        <img height="40px" width="40px" src="https://i.pinimg.com/236x/b0/c1/83/b0c1839f7b12ff48f5e28e731b0aa992.jpg">
+        <img height="40px" width="40px" src="https://i.pinimg.com/236x/ad/43/5f/ad435fcd926b5d68ef196060c18e8dd9.jpg">
+        <img height="40px" width="40px" src="https://i.pinimg.com/236x/c1/4d/7a/c14d7a457f5cd6cb448c058c068feb08.jpg">
+        <img height="40px" width="40px" src="https://i.pinimg.com/236x/f3/25/20/f32520be1ee81a51702333da173de5eb.jpg">
+        <img height="40px" width="40px"
+            src="data:image/png;base64,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">
+    </div>
+    <br><br>
+</body>
+
+</html>

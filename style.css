@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background: rgb(0, 255, 38);
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid {
+    text-align:left;
+    padding: 60px;
+}
+label{
+    font-size: 20px;
+}
+#button_show {
+    background-color: rgb(169, 138, 88);
+    border: 3px solid rgb(6, 5, 4);
+    color: white;
+    font-size: 25px;
+}
